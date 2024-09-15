@@ -1,16 +1,18 @@
 \thispagestyle{plain} % Page style without header and footer
-\pdfbookmark[1]{摘要}{摘要} % Add entry to PDF
-\chapter*{摘要} % Chapter* to appear without numeration
-\blindtext
+\pdfbookmark[1]{概述}{概述} % Add entry to PDF
+\chapter*{概述} % Chapter* to appear without numeration
+\label{cp:abstract}
 
-\keywordscn{Keyword A, Keyword B, Keyword C.}
+本实验报告使用由\textbf{于景一}制作的\LaTeX{}模板完成。关于此模板的信息，您可以前往\href{https://github.com/jstar0/LaTeXTemplate/}{GitHub模板仓库}具体了解。\footnote{或您可直接搜索GitHub账号\textit{@jstar0}了解更多}\footnote{您请注意，本模板基于LPPL v1.3c分发，本项目在原模板\href{https://github.com/joseareia/ipleiria-thesis}{Polytechnic University of Leiria: LaTeX Thesis Template}的基础上进行了合法地大量二改，包括但不限于自定义风格、中文化支持、样式重定义、功能增加等。}本文章使用的是“实验报告”模板。\footnote{模板提供两种样式，一种为学术论文样式，另一种为实验报告样式，具体区别请检查GitHub仓库上的两个分支。}\\
 
-%\blankpage
+本实验报告是\textit{系统开发工具基础课程}的第四次实验报告，主要内容为\textit{调试与性能分析、元编程、PyTorch编程和大杂烩（进程守护、API、Docker等）}。我们以上所述的调试与性能分析、元编程主要面向\textit{Linux系统}，PyTorch编程则以本机\textit{Windows}为实验环境。\textbf{本次实验遵循体验为主的原则，主要提高了动手能力。至于其中具体用法，仍需后续系统学习。}\\
 
-\pdfbookmark[1]{Abstract}{abstract} % Add entry to PDF
-\chapter*{Abstract} % Chapter* to appear without numeration
-\blindtext
+本实验报告的仓库地址为 \href{https://github.com/jstar0/ToolBasics4}{ToolBasics4 by jstar0}。\\
 
-\keywordsen{Keyword A, Keyword B, Keyword C.}
+\textbf{调试与性能分析}主要包括，\textit{使用专用调试工具和第三方日志系统结合}进行开发过程的调试。我们主要使用了\texttt{GDB}和\texttt{LLDB}进行C/C++调试分析，对于其他不同的程序，使用\texttt{log4cpp}和\texttt{spdlog}进行日志记录。考虑其他可视化调试工具，如\texttt{DTrace, Perfetto, Valgrind, htop}。了解性能分析的基本方法。\\
 
-%\blankpage
+\textbf{元编程}其实是一个\textbf{流程}，我们主要讨论了\textit{构建系统、持续集成系统}等两个方面。在构建系统中，我们首先介绍了\texttt{Makefile}，后面以\texttt{CMake}为例介绍使用，在持续集成系统中，我们以\textit{GitHub Action}为例，讲解其中的\texttt{CI}流程方法。\\
+
+\textbf{PyTorch}是一个\textbf{深度学习框架}，我们主要学习\textit{PyTorch的基本使用方法}。首先介绍\texttt{PyTorch}的基本概念，然后讲解\texttt{PyTorch}的基本使用方法，包括\texttt{Tensor}的使用、\texttt{Module}的使用、\texttt{Optimizer}的使用、\texttt{Dataset}和\texttt{DataLoader}的使用。最后，我们讲解了\texttt{PyTorch}的\texttt{GPU}加速方法（基于Windows）。\\
+
+\textbf{大杂烩}中，我们讨论了\textit{进程守护、API、Docker}等内容。\textit{由于这些内容我个人很常用，因此仅简单提及。}在进程守护中，我们讲解了\texttt{systemd}的基本使用方法，以及\texttt{systemd}的配置文件。在API中，我们讲解了\texttt{RESTful API}的基本概念，以及\texttt{Flask}框架的基本使用方法，并以我个人网站为例，作简单介绍。在Docker中，我们讲解了\texttt{Docker}的基本概念，以及\texttt{Docker}的基本使用方法。
